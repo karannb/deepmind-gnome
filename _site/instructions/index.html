@@ -45,7 +45,7 @@
 
 <!-- Fonts & Icons -->
 <link defer rel="stylesheet" href="/assets/css/academicons.min.css?f0b7046b84e425c55f3463ac249818f5">
-<link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap">
+<link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700%7CRoboto+Slab:100,300,400,500,700%7CMaterial+Icons&amp;display=swap">
 
 <!-- Code Syntax Highlighting -->
 <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light">
@@ -141,6 +141,8 @@
             
           
             
+          
+            
               
                 <li class="nav-item active">
                   
@@ -189,6 +191,7 @@
 
   <article>
     <h3 id="contents">Contents</h3>
+
 <ul>
   <li><a href="#instructions-for-submitting-a-blog-post">Instructions for Submitting a Blog Post</a></li>
   <li><a href="#review-and-publication">Review and Publication</a></li>
@@ -199,7 +202,8 @@
 
 <ol>
   <li>
-<strong>Fork and Rename</strong>:
+    <p><strong>Fork and Rename</strong>:</p>
+
     <ul>
       <li>Navigate to the <a href="https://github.com/gram-blogposts/staging/" rel="external nofollow noopener" target="_blank">staging repository</a>.</li>
       <li>Click on the “Fork” button of the repository page to create a copy of the repository under your GitHub account.</li>
@@ -207,26 +211,29 @@
     </ul>
   </li>
   <li>
-<strong>Setup and Deployment</strong>:
+    <p><strong>Setup and Deployment</strong>:</p>
+
     <ul>
       <li>Clone your forked repository to your local machine.</li>
-      <li>Setup locally the webiste. 
- Assuming you have <a href="https://www.ruby-lang.org/en/downloads/" rel="external nofollow noopener" target="_blank">Ruby</a> and <a href="https://bundler.io/" rel="external nofollow noopener" target="_blank">Bundler</a> installed on your system, try:
-        <div class="language-bash highlighter-rouge">
-<div class="highlight"><pre class="highlight"><code> <span class="nv">$ </span>git clone git@github.com:&lt;your-username&gt;/&lt;your-repo-name&gt;.git
- <span class="nv">$ </span><span class="nb">cd</span> &lt;your-repo-name&gt;
- <span class="nv">$ </span>bundle <span class="nb">install</span>
- <span class="nv">$ </span>bundle <span class="nb">exec </span>jekyll serve
-</code></pre></div>        </div>
-        <ul>
-          <li>Your can locally access and modify the website on the local address: <code class="language-plaintext highlighter-rouge">http://127.0.0.1:4000/</code>.</li>
-        </ul>
-      </li>
+      <li>Setup locally the webiste.
+Assuming you have <a href="https://www.ruby-lang.org/en/downloads/" rel="external nofollow noopener" target="_blank">Ruby</a> and <a href="https://bundler.io/" rel="external nofollow noopener" target="_blank">Bundler</a> installed on your system, try:</li>
+    </ul>
+
+    <div class="language-bash highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git clone git@github.com:&lt;your-username&gt;/&lt;your-repo-name&gt;.git
+<span class="nv">$ </span><span class="nb">cd</span> &lt;your-repo-name&gt;
+<span class="nv">$ </span>bundle <span class="nb">install</span>
+<span class="nv">$ </span>bundle <span class="nb">exec </span>jekyll serve
+</code></pre></div>    </div>
+
+    <ul>
+      <li>Your can locally access and modify the website on the local address: <code class="language-plaintext highlighter-rouge">http://127.0.0.1:4000/</code>.</li>
     </ul>
   </li>
   <li>
-<strong>Preparing Your Submission</strong>:
-You can copy and modify the <a href="/blog/2021/distill/">Distill Template</a>, found under the <code class="language-plaintext highlighter-rouge">_posts</code> directory. Leave the original template as it is.
+    <p><strong>Preparing Your Submission</strong>:
+You can copy and modify the <a href="/blog/2021/distill/">Distill Template</a>, found under the <code class="language-plaintext highlighter-rouge">_posts</code> directory. Leave the original template as it is.</p>
+
     <ul>
       <li>Create a Markdown or HTML file in the <code class="language-plaintext highlighter-rouge">_posts/</code> directory with the format <code class="language-plaintext highlighter-rouge">_posts/YYYY-MM-DD-your-submission.md</code>.</li>
       <li>Add any static image to <code class="language-plaintext highlighter-rouge">assets/img/YYYY-MM-DD-your-submission/</code>.</li>
@@ -235,7 +242,8 @@ You can copy and modify the <a href="/blog/2021/distill/">Distill Template</a>, 
     </ul>
   </li>
   <li>
-<strong>Submit a Pull Request</strong>:
+    <p><strong>Submit a Pull Request</strong>:</p>
+
     <ul>
       <li>Before submitting, double-check that all personal identifiers have been removed from your blog post content.</li>
       <li>Push your changes to your forked repository.</li>
@@ -245,7 +253,7 @@ You can copy and modify the <a href="/blog/2021/distill/">Distill Template</a>, 
     </ul>
   </li>
   <li>
-<strong>Submit to Open Review</strong>:
+    <p><strong>Submit to Open Review</strong>:</p>
     <ul>
       <li>Once your pull request is submitted, provide the title and URL of your blog post via OpenReview.</li>
     </ul>
@@ -268,7 +276,6 @@ You can copy and modify the <a href="/blog/2021/distill/">Distill Template</a>, 
   <li>Feel free to reach out to the organizers at: <a href="mailto:organizers@gram-workshop.org">organizers AT gram-workshop DOT org</a>
 </li>
 </ul>
-
 
   </article>
 

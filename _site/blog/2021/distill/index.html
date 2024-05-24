@@ -42,7 +42,7 @@
 
 <!-- Fonts & Icons -->
 <link defer rel="stylesheet" href="/assets/css/academicons.min.css?f0b7046b84e425c55f3463ac249818f5">
-<link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap">
+<link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700%7CRoboto+Slab:100,300,400,500,700%7CMaterial+Icons&amp;display=swap">
 
 <!-- Code Syntax Highlighting -->
 <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light">
@@ -244,6 +244,8 @@
             
           
             
+          
+            
               
                 <li class="nav-item ">
                   
@@ -403,23 +405,23 @@ You can always use the default code-highlight using the <code class="language-pl
 <p>The plot must be generated separately and saved into an HTML file.
 To generate the plot that you see above, you can use the following code snippet:</p>
 
-<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="n">pandas</span> <span class="k">as</span> <span class="n">pd</span>
-<span class="kn">import</span> <span class="n">plotly.express</span> <span class="k">as</span> <span class="n">px</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="nf">read_csv</span><span class="p">(</span>
-<span class="sh">'</span><span class="s">https://raw.githubusercontent.com/plotly/datasets/master/earthquakes-23k.csv</span><span class="sh">'</span>
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="n">pd</span>
+<span class="kn">import</span> <span class="nn">plotly.express</span> <span class="k">as</span> <span class="n">px</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">read_csv</span><span class="p">(</span>
+<span class="s">'https://raw.githubusercontent.com/plotly/datasets/master/earthquakes-23k.csv'</span>
 <span class="p">)</span>
-<span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="p">.</span><span class="nf">density_mapbox</span><span class="p">(</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="p">.</span><span class="n">density_mapbox</span><span class="p">(</span>
 <span class="n">df</span><span class="p">,</span>
-<span class="n">lat</span><span class="o">=</span><span class="sh">'</span><span class="s">Latitude</span><span class="sh">'</span><span class="p">,</span>
-<span class="n">lon</span><span class="o">=</span><span class="sh">'</span><span class="s">Longitude</span><span class="sh">'</span><span class="p">,</span>
-<span class="n">z</span><span class="o">=</span><span class="sh">'</span><span class="s">Magnitude</span><span class="sh">'</span><span class="p">,</span>
+<span class="n">lat</span><span class="o">=</span><span class="s">'Latitude'</span><span class="p">,</span>
+<span class="n">lon</span><span class="o">=</span><span class="s">'Longitude'</span><span class="p">,</span>
+<span class="n">z</span><span class="o">=</span><span class="s">'Magnitude'</span><span class="p">,</span>
 <span class="n">radius</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
-<span class="n">center</span><span class="o">=</span><span class="nf">dict</span><span class="p">(</span><span class="n">lat</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">lon</span><span class="o">=</span><span class="mi">180</span><span class="p">),</span>
+<span class="n">center</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">lat</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">lon</span><span class="o">=</span><span class="mi">180</span><span class="p">),</span>
 <span class="n">zoom</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
-<span class="n">mapbox_style</span><span class="o">=</span><span class="sh">"</span><span class="s">stamen-terrain</span><span class="sh">"</span><span class="p">,</span>
+<span class="n">mapbox_style</span><span class="o">=</span><span class="s">"stamen-terrain"</span><span class="p">,</span>
 <span class="p">)</span>
-<span class="n">fig</span><span class="p">.</span><span class="nf">show</span><span class="p">()</span>
-<span class="n">fig</span><span class="p">.</span><span class="nf">write_html</span><span class="p">(</span><span class="sh">'</span><span class="s">assets/distill-template/plotly/demo.html</span><span class="sh">'</span><span class="p">)</span></code></pre></figure>
+<span class="n">fig</span><span class="p">.</span><span class="n">show</span><span class="p">()</span>
+<span class="n">fig</span><span class="p">.</span><span class="n">write_html</span><span class="p">(</span><span class="s">'assets/distill-template/plotly/demo.html'</span><span class="p">)</span></code></pre></figure>
 
 <hr>
 
@@ -478,6 +480,7 @@ It does not interrupt the normal flow of <code class="language-plaintext highlig
 </div>
 
 <hr>
+
 <h2 id="images">Images</h2>
 
 <p>This is an example post with image galleries.</p>
@@ -705,10 +708,10 @@ example.com (but not on Github, for example).</p>
 <p>Inline <code class="language-plaintext highlighter-rouge">code</code> has <code class="language-plaintext highlighter-rouge">back-ticks around</code> it.</p>
 
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">s</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">JavaScript syntax highlighting</span><span class="dl">"</span><span class="p">;</span>
-<span class="nf">alert</span><span class="p">(</span><span class="nx">s</span><span class="p">);</span>
+<span class="nx">alert</span><span class="p">(</span><span class="nx">s</span><span class="p">);</span>
 </code></pre></div></div>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">s</span> <span class="o">=</span> <span class="sh">"</span><span class="s">Python syntax highlighting</span><span class="sh">"</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">s</span> <span class="o">=</span> <span class="s">"Python syntax highlighting"</span>
 <span class="k">print</span> <span class="n">s</span>
 </code></pre></div></div>
 
@@ -788,7 +791,6 @@ This line is part of the same quote.</p>
 
 <p>This line is also a separate paragraph, but…
 This line is only separated by a single newline, so it’s a separate line in the <em>same paragraph</em>.</p>
-
 
       </d-article>
 
